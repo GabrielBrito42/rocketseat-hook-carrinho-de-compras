@@ -226,7 +226,7 @@ describe('useCart Hook', () => {
     act(() => {
       result.current.addProduct(productId);
     });
-    
+
     await waitFor(
       () => {
         expect(mockedToastError).toHaveBeenCalledWith(
